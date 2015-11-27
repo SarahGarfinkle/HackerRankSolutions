@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.lang.*;
+//will be using the parse functions
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        String willBeInt = scnr.nextLine();
+        String willBeDoub = scnr.nextLine();
+        String stayString = scnr.nextLine();
+        //this gets the initial strings. For a larger input, StringBuilder is more efficient
+        int num = Integer.parseInt(willBeInt);
+        double doub = Double.parseDouble(willBeDoub);
+        //parses the specified strings for both integers and doubles
+        System.out.println("String: " + stayString);
+        System.out.println("Double: " + doub);
+        System.out.println("Int: " + num);
+        
+    }
+}
